@@ -7,6 +7,7 @@ import re
 import smtplib
 import ssl
 from contextlib import suppress
+from dataclasses import dataclass
 from datetime import date
 from email import policy
 from email.header import decode_header, make_header
@@ -15,7 +16,6 @@ from email.parser import BytesParser
 from email.utils import parseaddr
 from fnmatch import fnmatch
 from pathlib import Path
-from dataclasses import dataclass
 from typing import Any, Literal
 
 from loguru import logger
